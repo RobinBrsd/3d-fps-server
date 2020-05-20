@@ -63,6 +63,6 @@ io.on('connection', (socket) => {
     });
 });
 
-http.listen(7777, () => {
+http.listen(process.env.PORT || 7777, () => {
     console.log('Server Running On Port : 7777');
 });
